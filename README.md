@@ -7,7 +7,7 @@ lit-html and lit-element are fantastic for handling dynamic templates. But what 
 
 Enter dim-element! dim takes advantage of lit-element's UpdatingElement to handle properties and lifecycle, but it uses simple strings instead of lit-html to build your element's Shadow DOM. Instead of optmizing for fast, efficient updates, dim optimizes for quick startups and renders, at the expense of making re-renders much slower and less effective.
 
-## When you should you be dim instead of lit?
+## When you should you ~~be~~ use dim instead of lit?
 
 Sometimes, your template doesn't change. If that's the case, dim is your tool!
 
@@ -22,7 +22,7 @@ Any time you need your template to change over the lifetime of an element. If yo
 ```ts
     import {DimElement, css, customElement, listen, property} from 'dim-element';
 
-    // This decorator defines the element.
+    // You can use most decorators from lit-element
     @customElement('my-element')
     export class MyElement extends DimElement {
 
