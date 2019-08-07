@@ -1,0 +1,23 @@
+{
+  "name": "@thatjoemoore/dim-element",
+  "version": "0.0.0",
+  "description": "lit-element's dim little brother",
+  "main": "dim-element.js",
+  "module": "dim-element.js",
+  "scripts": {
+    "test": "echo write some tests already"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThatJoeMoore/dim-element.git"
+  },
+  "author": "Joseph Moore <npm@thatjoemoore.com> (https://thatjoemoore.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gith:wub.com/ThatJoeMoore/dim-element/issues"
+  },
+  "homepage": "https://github.com/ThatJoeMoore/dim-element#readme",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  }
+}
