@@ -28,9 +28,13 @@ Any time you need your template to change over the lifetime of an element. If yo
 
       // You can declare properties in exactly the same way as with lit-element
       @property()
-      mood = 'great';
+      clicked = false;
 
+      // instead of having a dynamic template, we just change attributes and let CSS handle the rest
       static styles = css`
+        :host[clicked] {
+          background-color: blue;
+        }
         span {
           color: green;
         }`;
@@ -44,7 +48,7 @@ Any time you need your template to change over the lifetime of an element. If yo
       // lit-html's `@event` syntax.
       @listen({to: 'click', on: '#great'})
       onGreatClick(e) {
-        window.alert('Web Components are great!');
+        this.clicked = true;
       }
 
     }
