@@ -20,7 +20,7 @@ Any time you need your template to change over the lifetime of an element. If yo
 # Example
 
 ```ts
-    import {DimElement, css, customElement, listener, property} from 'dim-element';
+    import {DimElement, css, customElement, listen, property} from 'dim-element';
 
     // This decorator defines the element.
     @customElement('my-element')
